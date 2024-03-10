@@ -1,0 +1,787 @@
+{
+	"info": {
+		"_postman_id": "095b1da3-f418-458b-a00c-33020df02e4b",
+		"name": "Assignment02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33002828"
+	},
+	"item": [
+		{
+			"name": "http://localhost/phpAssignment/products.php",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "sunglasses",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "NULL",
+							"type": "text"
+						},
+						{
+							"key": "pricing",
+							"value": "13.99",
+							"type": "text"
+						},
+						{
+							"key": "shipping_cost",
+							"value": "2.99",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/products.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/orders.php?id=14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "15",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "product_id",
+							"value": "9",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "total_amount",
+							"value": "15.96",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/orders.php?id=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"orders.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/products.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "T-shirt",
+							"type": "text"
+						},
+						{
+							"key": "pricing",
+							"value": "19.99",
+							"type": "text"
+						},
+						{
+							"key": "shipping_cost",
+							"value": "3.99",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "NULL",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/products.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"products.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/products.php?id=14",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "T-shirt",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "NULL",
+							"type": "text"
+						},
+						{
+							"key": "pricing",
+							"value": "17.99",
+							"type": "text"
+						},
+						{
+							"key": "shipping_cost",
+							"value": "3.99",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/products.php?id=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"products.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/products.php?id=14",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/products.php?id=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"products.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/users.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/users.php?id=15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/users.php?id=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"users.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/users.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "user7@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "User7",
+							"type": "text"
+						},
+						{
+							"key": "purchase_history",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "shipping_address",
+							"value": "Waterloo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/users.php?id=17",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "user8@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user321",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "User8",
+							"type": "text"
+						},
+						{
+							"key": "purchase_history",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "shipping_address",
+							"value": "Waterloo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/users.php?id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"users.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/users.php?id=16",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/users.php?id=16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"users.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/orders.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/orders.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"orders.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/orders.php?user_id=15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/orders.php?user_id=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"orders.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/orders.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"15\",\r\n    \"product_id\":\"1\",\r\n    \"quantity\":\"6\",\r\n    \"total_amount\":\"60\",\r\n    \"order_date\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/orders.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"orders.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/orders.php?id=15",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/orders.php?id=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"orders.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/comments.php?product_id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/comments.php?product_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"comments.php"
+					],
+					"query": [
+						{
+							"key": "product_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/comments.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"product_id\":\"9\",\r\n   \"user_id\":\"15\",\r\n   \"image\":\"\",\r\n   \"rating\":\"5\",\r\n   \"comment_text\":\"Excellent\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/comments.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"comments.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/comments.php?comment_id=4 ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rating\":\"4\",\r\n    \"comment_text\":\"Very Good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/comments.php?comment_id=4 ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"comments.php"
+					],
+					"query": [
+						{
+							"key": "comment_id",
+							"value": "4 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/comments.php?comment_id=4 ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/comments.php?comment_id=4 ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"comments.php"
+					],
+					"query": [
+						{
+							"key": "comment_id",
+							"value": "4 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/cart.php?user_id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/cart.php?user_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"cart.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/cart.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":\"9\",\r\n    \"user_id\":\"15\",\r\n    \"quantity\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/cart.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"cart.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"cart.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "15 "
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": " product_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":\"9\",\r\n    \"user_id\":\"15\",\r\n    \"quantity\":\"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"cart.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "15 "
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": " product_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/phpAssignment/cart.php?user_id=15 && product_id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"phpAssignment",
+						"cart.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "15 "
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": " product_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
